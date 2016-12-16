@@ -8,3 +8,9 @@ cd到开发目录， 创建打包平台
 
 
 4. ionic build android
+
+发布android App生产秘钥步骤
+1. cd到apk文件所在目录
+2. 运行下面代码，按照提示操作，秘钥文件将存储到/users/zhangxuchao/文件夹中
+
+keytool -genkey -v -keystore android.keystore -alias android -keyalg RSA -validity 20000 -keystore /Users/zhangxuchao/android_demo.keystore
